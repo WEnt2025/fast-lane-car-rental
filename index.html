@@ -1,0 +1,319 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Fast Lane Car Rental | Affordable, Reliable Rentals</title>
+  <meta name="description" content="Fast Lane Car Rental offers clean, reliable vehicles with easy booking and flexible pickup. Reserve today." />
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css" />
+</head>
+
+<body>
+  <!-- Top Bar -->
+  <header class="site-header">
+    <div class="container header-inner">
+      <a class="brand" href="#top" aria-label="Fast Lane Car Rental Home">
+        <img class="logo" src="images/logo.jpg" alt="Fast Lane Car Rental logo">
+      </a>
+
+      <button class="menu-btn" id="menuBtn" aria-label="Open menu" aria-controls="nav" aria-expanded="false">
+        ☰
+      </button>
+
+      <nav class="nav" id="nav">
+        <a href="#fleet">Fleet</a>
+        <a href="#how">How It Works</a>
+        <a href="#rates">Rates</a>
+        <a href="#reviews">Reviews</a>
+        <a href="#contact" class="btn btn-primary">Book Now</a>
+      </nav>
+    </div>
+  </header>
+
+  <!-- Hero -->
+  <main id="top">
+    <section class="hero">
+      <div class="container hero-grid">
+        <div class="hero-copy">
+          <h1>Fast rentals. Clean cars. Zero hassle.</h1>
+          <p>
+            Reserve in minutes with flexible pickup options. Perfect for work, weekend trips, or replacement rentals.
+          </p>
+
+          <div class="hero-cta">
+            <a class="btn btn-primary" href="#contact">Get a Quote</a>
+            <a class="btn btn-ghost" href="#fleet">View Fleet</a>
+          </div>
+
+          <div class="hero-badges">
+            <div class="badge">✅ Same-day availability</div>
+            <div class="badge">✅ Transparent pricing</div>
+            <div class="badge">✅ Local & reliable</div>
+          </div>
+        </div>
+
+        <div class="hero-card">
+          <h3>Quick Booking</h3>
+          <form class="mini-form" action="#contact">
+            <label>
+              Pickup Date
+              <input type="date" required>
+            </label>
+            <label>
+              Return Date
+              <input type="date" required>
+            </label>
+            <label>
+              Vehicle Type
+              <select>
+                <option>Sedan</option>
+                <option>SUV</option>
+                <option>Truck</option>
+                <option>Luxury</option>
+              </select>
+            </label>
+            <button class="btn btn-primary" type="submit">Check Availability</button>
+            <p class="small">*This form jumps to contact so you can confirm details.</p>
+          </form>
+        </div>
+      </div>
+    </section>
+
+    <!-- Fleet -->
+    <section class="section" id="fleet">
+      <div class="container">
+        <div class="section-head">
+          <h2>Our Fleet</h2>
+          <p>Choose what fits your trip — clean, reliable, and ready to go.</p>
+        </div>
+
+        <div class="cards">
+          <article class="card">
+            <div class="card-top">
+              <h3>Sedans</h3>
+              <span class="pill">Best Value</span>
+            </div>
+            <ul>
+              <li>Great on gas</li>
+              <li>Easy city parking</li>
+              <li>Perfect for daily driving</li>
+            </ul>
+            <a class="btn btn-ghost" href="#contact">Reserve a Sedan</a>
+          </article>
+
+          <article class="card">
+            <div class="card-top">
+              <h3>SUVs</h3>
+              <span class="pill">Most Popular</span>
+            </div>
+            <ul>
+              <li>More room for passengers</li>
+              <li>Extra cargo space</li>
+              <li>Comfortable for road trips</li>
+            </ul>
+            <a class="btn btn-ghost" href="#contact">Reserve an SUV</a>
+          </article>
+
+          <article class="card">
+            <div class="card-top">
+              <h3>Trucks</h3>
+              <span class="pill">Utility</span>
+            </div>
+            <ul>
+              <li>Moving & hauling</li>
+              <li>Work-ready options</li>
+              <li>Strong towing capability</li>
+            </ul>
+            <a class="btn btn-ghost" href="#contact">Reserve a Truck</a>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- How it works -->
+    <section class="section section-alt" id="how">
+      <div class="container">
+        <div class="section-head">
+          <h2>How It Works</h2>
+          <p>Simple steps from booking to keys-in-hand.</p>
+        </div>
+
+        <div class="steps">
+          <div class="step">
+            <div class="step-num">1</div>
+            <h3>Request a Quote</h3>
+            <p>Tell us your dates, vehicle type, and pickup preference.</p>
+          </div>
+          <div class="step">
+            <div class="step-num">2</div>
+            <h3>Confirm & Pay</h3>
+            <p>We’ll confirm availability and provide a clear total price.</p>
+          </div>
+          <div class="step">
+            <div class="step-num">3</div>
+            <h3>Pickup & Go</h3>
+            <p>Quick check-in, keys ready, and you’re on the road.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Rates -->
+    <section class="section" id="rates">
+      <div class="container">
+        <div class="section-head">
+          <h2>Rates & Options</h2>
+          <p>Example pricing — final rate depends on dates, vehicle, and availability.</p>
+        </div>
+
+        <div class="pricing">
+          <div class="price-box">
+            <h3>Daily</h3>
+            <div class="price">$59<span>/day*</span></div>
+            <ul>
+              <li>Flexible daily rentals</li>
+              <li>Clean & inspected vehicles</li>
+              <li>Easy pickup options</li>
+            </ul>
+            <a class="btn btn-primary" href="#contact">Get Daily Quote</a>
+          </div>
+
+          <div class="price-box featured">
+            <h3>Weekly</h3>
+            <div class="price">$349<span>/week*</span></div>
+            <ul>
+              <li>Best overall value</li>
+              <li>Ideal for extended trips</li>
+              <li>Priority availability</li>
+            </ul>
+            <a class="btn btn-primary" href="#contact">Get Weekly Quote</a>
+          </div>
+
+          <div class="price-box">
+            <h3>Monthly</h3>
+            <div class="price">$1,099<span>/mo*</span></div>
+            <ul>
+              <li>Perfect for long-term needs</li>
+              <li>Work or personal use</li>
+              <li>Discounted extended rates</li>
+            </ul>
+            <a class="btn btn-primary" href="#contact">Get Monthly Quote</a>
+          </div>
+        </div>
+
+        <p class="small muted">*Example rates only. Taxes/fees/deposits may apply depending on location and terms.</p>
+      </div>
+    </section>
+
+    <!-- Reviews -->
+    <section class="section section-alt" id="reviews">
+      <div class="container">
+        <div class="section-head">
+          <h2>What Customers Say</h2>
+          <p>Fast service and smooth rentals — every time.</p>
+        </div>
+
+        <div class="quotes">
+          <figure class="quote">
+            <blockquote>“Easy booking and the car was spotless. Pickup was quick and professional.”</blockquote>
+            <figcaption>— Customer Review</figcaption>
+          </figure>
+          <figure class="quote">
+            <blockquote>“Transparent pricing and great communication. I’ll book again.”</blockquote>
+            <figcaption>— Customer Review</figcaption>
+          </figure>
+          <figure class="quote">
+            <blockquote>“Needed a vehicle same day and they came through. Smooth process.”</blockquote>
+            <figcaption>— Customer Review</figcaption>
+          </figure>
+        </div>
+      </div>
+    </section>
+
+    <!-- Contact -->
+    <section class="section" id="contact">
+      <div class="container contact-grid">
+        <div>
+          <h2>Book Your Rental</h2>
+          <p class="muted">Send your details and we’ll confirm availability ASAP.</p>
+
+          <div class="contact-cards">
+            <div class="contact-card">
+              <h3>Phone</h3>
+              <p><a href="tel:+1XXXXXXXXXX">(XXX) XXX-XXXX</a></p>
+              <p class="small muted">Replace with your business number</p>
+            </div>
+            <div class="contact-card">
+              <h3>Email</h3>
+              <p><a href="mailto:bookings@fastlanecarrental.com">bookings@fastlanecarrental.com</a></p>
+              <p class="small muted">Replace with your email</p>
+            </div>
+            <div class="contact-card">
+              <h3>Service Area</h3>
+              <p>Los Angeles & Surrounding Areas</p>
+              <p class="small muted">Update to your city/area</p>
+            </div>
+          </div>
+        </div>
+
+        <div class="form-wrap">
+          <form class="contact-form" onsubmit="return sendEmail(event)">
+            <div class="grid2">
+              <label>
+                Full Name
+                <input name="name" required placeholder="Your name" />
+              </label>
+              <label>
+                Phone
+                <input name="phone" required placeholder="(555) 555-5555" />
+              </label>
+            </div>
+
+            <div class="grid2">
+              <label>
+                Pickup Date
+                <input name="pickupDate" type="date" required />
+              </label>
+              <label>
+                Return Date
+                <input name="returnDate" type="date" required />
+              </label>
+            </div>
+
+            <label>
+              Vehicle Type
+              <select name="vehicleType">
+                <option>Sedan</option>
+                <option>SUV</option>
+                <option>Truck</option>
+                <option>Luxury</option>
+              </select>
+            </label>
+
+            <label>
+              Message
+              <textarea name="message" rows="4" placeholder="Pickup location preference, special requests, etc."></textarea>
+            </label>
+
+            <button class="btn btn-primary" type="submit">Send Booking Request</button>
+            <p class="small muted">This uses your email app to send the request (no server needed).</p>
+          </form>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="footer">
+    <div class="container footer-inner">
+      <img class="footer-logo" src="images/logo.jpg" alt="Fast Lane Car Rental logo" />
+      <p class="small muted">© <span id="year"></span> Fast Lane Car Rental. All rights reserved.</p>
+      <p class="small muted">Terms & policies available upon request.</p>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
