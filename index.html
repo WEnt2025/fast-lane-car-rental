@@ -16,7 +16,7 @@
   <header class="site-header">
     <div class="container header-inner">
       <a class="brand" href="#top" aria-label="Fast Lane Car Rental Home">
-        <img class="logo" src="images/logo.png" alt="Fast Lane Car Rental logo">
+        <img class="logo" src="images/logo.jpg" alt="Fast Lane Car Rental logo">
       </a>
 
       <button class="menu-btn" id="menuBtn" aria-label="Open menu" aria-controls="nav" aria-expanded="false">
@@ -243,29 +243,24 @@
           <div class="contact-cards">
             <div class="contact-card">
               <h3>Phone</h3>
-              <p><a href="tel:+13238498509">(323) 849-8509</a></p>
-              <p class="small muted"></p>
+              <p><a href="tel:+1XXXXXXXXXX">(XXX) XXX-XXXX</a></p>
+              <p class="small muted">Replace with your business number</p>
             </div>
             <div class="contact-card">
               <h3>Email</h3>
-              <p><a href="mailto:FLCRental1@gmail.com">FLCRental1@gmail.com</a></p>
-              <p class="small muted"></p>
+              <p><a href="mailto:bookings@fastlanecarrental.com">bookings@fastlanecarrental.com</a></p>
+              <p class="small muted">Replace with your email</p>
             </div>
             <div class="contact-card">
               <h3>Service Area</h3>
               <p>Los Angeles & Surrounding Areas</p>
-              <p class="small muted"></p>
+              <p class="small muted">Update to your city/area</p>
             </div>
           </div>
         </div>
 
         <div class="form-wrap">
-          <p class="muted">        
-            Select a time below and we'll call you to finalize your rental. </P>
-          <!-- Calendly inline widget begin -->
-<div class="calendly-inline-widget" data-url="https://calendly.com/thewenterprisesllc" style="min-width:320px;height:700px;"></div>
-<script type="text/javascript" src="https://assets.calendly.com/assets/external/widget.js" async></script>
-<!-- Calendly inline widget end -->
+          <form class="contact-form" onsubmit="return sendEmail(event)">
             <div class="grid2">
               <label>
                 Full Name
@@ -304,7 +299,7 @@
             </label>
 
             <button class="btn btn-primary" type="submit">Send Booking Request</button>
-            <p class="small muted"></p>
+            <p class="small muted">This uses your email app to send the request (no server needed).</p>
           </form>
         </div>
       </div>
@@ -313,7 +308,7 @@
 
   <footer class="footer">
     <div class="container footer-inner">
-      <img class="footer-logo" src="images/logo.png" alt="Fast Lane Car Rental logo" />
+      <img class="footer-logo" src="images/logo.jpg" alt="Fast Lane Car Rental logo" />
       <p class="small muted">© <span id="year"></span> Fast Lane Car Rental. All rights reserved.</p>
       <p class="small muted">Terms & policies available upon request.</p>
     </div>
