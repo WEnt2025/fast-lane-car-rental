@@ -26,22 +26,7 @@ Message:
 ${data.get("message") || ""}`
   );
 
-  // Replace the email below with your real business email:
-  window.location.href = `mailto:bookings@fastlanecarrental.com?subject=${subject}&body=${body}`;
+  
+  window.location.href = `mailto:FLCRental1@gmail.com?subject=${subject}&body=${body}`;
   return false;
 }
-function sendContactEmail(e){
-  e.preventDefault();
-
-  const form = e.target;
-  const data = new FormData(form);
-
-  const subject = encodeURIComponent("Fast Lane Car Rental - Contact Request");
-  const body = encodeURIComponent(
-`Name: ${data.get("name")}
-Phone: ${data.get("phone")}
-Email: ${data.get("email")}
-
-Message:
-${data.get("message")}`
-  );
